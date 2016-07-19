@@ -1,0 +1,27 @@
+{{ h1 }}   {{ games.length }} games
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Stadium</td>
+            <td>Home</td>
+            <td>Away</td>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <!-- <tr *ngFor="let item of games">
+        <td>{{ item }}</td> DONT WORK /!\ -->
+        <tr (click)="onSelect()">
+            <td>{{ games[0].id }}</td>
+            <td>{{ games[0].stadium }}</td>
+            <td>{{ games[0].home }}</td>
+            <td>{{ games[0].away }}</td>
+        </tr>
+
+    </tbody>
+        
+
+</table>
+
